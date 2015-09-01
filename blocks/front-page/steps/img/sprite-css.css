@@ -1,0 +1,35 @@
+.icon {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icon-analytic {
+    width: 16px;
+    height: 12px;
+    background-position: -25px -25px;
+}
+
+.icon-steps--eye {
+    width: 24px;
+    height: 14px;
+    background-position: -25px -87px;
+}
+
+.icon-steps--inform {
+    width: 17px;
+    height: 17px;
+    background-position: -25px -151px;
+}
+
+.icon-steps--options {
+    width: 16px;
+    height: 16px;
+    background-position: -25px -218px;
+}
+
+.icon-steps--semantika {
+    width: 16px;
+    height: 16px;
+    background-position: -25px -284px;
+}

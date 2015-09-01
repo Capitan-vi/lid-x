@@ -1,0 +1,82 @@
+
+
+/*      ALL RESPONSIVE GRID THINGS HERE      */
+
+.generate-columns(12,xs); 
+
+//phone vertical
+
+  @media screen and (max-width:480px) {
+      
+      .wrapper { width: 100%; box-sizing: border-box;}
+      .hidden-xs {display: none;} 
+      .generate-columns(12,xs); 
+      
+  }
+
+//phone horizontal
+
+  @media (min-width:481px) and (max-width:768px) {
+    
+          .wrapper { width: 480px;}
+          .hidden-xs {display: none;}
+          .generate-columns(12,xs); 
+    
+ }
+
+// tablet
+
+  @media (min-width:769px) and (max-width:960px) {
+	
+    .wrapper { width: 768px;}
+    
+    .hidden-sm {display: none;}
+    
+    .generate-columns(12,sm); 
+    
+    
+	
+  }
+ 
+// notebook
+
+  @media (min-width:961px) and (max-width: 1200px) {
+	
+    .wrapper { width: 940px;}
+    
+    .hidden-md {display: none;}
+    
+    .generate-columns(12,md); 
+	
+  }  
+  
+
+// desktop
+
+  @media (min-width:1200px) {
+    
+   .wrapper { width: 1140px;}  
+   
+   .generate-columns(12,lg); 
+	
+  }
+  
+ 
+  
+.pull-left { float: left; }
+.pull-right { float: right; } 
+
+
+
+.row {
+  .clearfix();
+  .row(@row-padding);
+}
+
+.clearfix {
+	.clearfix();
+}
+
+
+  
+  

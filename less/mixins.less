@@ -1,0 +1,126 @@
+.rezet(){
+    body, p, ul, figure, h1, h2, h3, h4, h5, h6, input{
+        padding: 0;
+        margin: 0;
+    }
+}
+.bz(){
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.bdrs(@radius:5px){
+    -webkit-border-radius: @radius + 0px;
+       -moz-border-radius: @radius + 0px;
+            border-radius: @radius + 0px;
+}
+.bsh(@x,@y,@blur,@stretching,@color){
+    -webkit-box-shadow: @x + 0px @y + 0px @blur + 0px @stretching + 0px @color;
+       -moz-box-shadow: @x + 0px @y + 0px @blur + 0px @stretching + 0px @color;
+            box-shadow: @x + 0px @y + 0px @blur + 0px @stretching + 0px @color;
+}
+.trf(@transform){
+    -webkit-transform: @transform;
+       -moz-transform: @transform;
+        -ms-transform: @transform;
+         -o-transform: @transform;
+            transform: @transform;
+}
+.trs(@time,@prop:all){
+    -webkit-transition: @prop @time;
+       -moz-transition: @prop @time;
+        -ms-transition: @prop @time;
+         -o-transition: @prop @time;
+            transition: @prop @time;
+}
+.clear(){
+    &:after{
+        display: table;
+        content: "";
+        clear: both;
+    }
+}
+
+.clearfix() { .clear(); }
+
+
+.btn(@bg-color:#85b94f,@color:#fff){
+    display: inline-block;
+    text-decoration: none;
+    color: @color;
+    background-color: @bg-color;
+
+    &:hover{
+        background-color: @bg-color - 40%;
+    }
+}
+
+.unfloat(){
+    
+    width: 100%;
+    float:none;
+    clear: both;
+    
+    
+}
+
+
+
+
+
+
+.container() {
+	margin: 0 auto;
+	.clearfix();
+}
+
+.container(@width, @padding) { 
+	width: @width;
+    min-width: @width;
+	padding: 0 @padding;
+}
+
+
+
+
+.row(@padding) {
+	margin: 0 -(@padding);
+
+	& [class*="col-"] {
+    padding: 0 (@padding);
+    float: left;
+    box-sizing: border-box;
+	}
+}
+
+
+
+// .generate-columns(@n, @i: 1) when (@i =< @n) { 
+
+// 	.col-@{i} {
+// 		width: (@i * 100% / @n);
+// 	}s
+	
+// 	.generate-columns(@n, (@i + 1));
+// }
+
+
+.generate-columns(@n, @index, @i: 1) when (@i =< @n) { 
+
+	.col-@{index}-@{i} {
+		width: (@i * 100% / @n);
+	}
+	
+	.generate-columns(@n, @index, (@i + 1));
+}
+
+
+
+
+.hidden(@index) {
+
+  .hidden-@{index} {
+    display: none !important;
+  }
+
+}

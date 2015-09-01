@@ -1,0 +1,77 @@
+
+
+@phone_from: 0;
+@phone_to: 480px;
+
+@tablet_from: 0;
+@tablet_to: 480px;
+
+
+
+
+ 
+/* phone all */  
+
+@media (min-width:0) and (max-width: 768px) {
+
+   .header nav {
+		display: block;
+		float: none;
+		text-align: center;
+		margin-top: 20px;
+    }
+
+    .header nav li{ margin-top: 10px; }
+
+}
+
+
+@media (min-width:0) and (max-width: 480px) {
+
+	.phone-number--header {display: none;}
+
+	.header .wrapper{
+		
+		text-align: center;
+
+		p{ text-align: left; }
+	}
+
+	.header nav li{ margin-top: 10px; }
+
+	nav ul li:first-child,
+	nav ul li:nth-child(n+4){
+		display: none;
+	}
+
+}
+
+
+//iphone
+
+@media (min-width:0) and (max-width: 320px) {
+
+	.phone-number--header {display: none;}
+
+	.header{
+		.wrapper{
+			text-align: center;
+
+			p{
+				text-align: left;
+			}
+
+
+
+		}
+	}
+
+}
+
+
+// /* phone horizontal */   @media (min-width:481px) and (max-width:768px) {
+//
+//
+//
+//
+//}

@@ -1,0 +1,178 @@
+.top-mobile{
+	background-color: #ed303c;
+	display: none;
+
+	p{
+		color: @white;
+  		padding: 8px 20px;
+  		font-size: @small+2;
+	}
+}
+
+.main-promo{
+
+	background-color: #fff;
+	background-image: url(http://lid-x.ru/wp-content/uploads/2015/01/vasiliy.jpg);
+	background-size: cover;
+	min-height: 540px;
+	position: relative;
+	// margin-bottom: 15px;
+	
+	.wrapper { min-height: 540px; }
+
+	&--mobile{
+		display: none;
+	}
+	
+	&__head {
+      padding-top: 127px;
+      width: 500px;
+      background-image: url(http://lid-x.ru/wp-content/uploads/2015/06/ipad-mini.png);
+      background-repeat: no-repeat;
+      background-position: 90% -9%;
+      background-size: cover;
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+      padding-bottom: 80px;
+      padding-left: 100px;
+      padding-right: 100px;
+      box-sizing: border-box;
+    }
+
+	&__descr{
+		position: relative;
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+
+		&-title {
+			font-size: @normal;
+			text-align: center;
+		}
+
+		&-promo{
+			position: absolute;
+			bottom: 11px;
+			background-color: #f2f2f2;
+			padding: 20px 40px;
+			box-sizing: border-box;
+			overflow: hidden;
+
+            text-align: center;
+            min-width: 198px;
+
+			p{
+				width: 66%;
+				color: #444;
+				font-size: @normal;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			a{
+				vertical-align: middle;
+  				float: right;
+			}
+		}
+	}
+	
+	&__search {
+	    
+      background-image: url(http://lid-x.ru/wp-content/uploads/2015/01/bg-yandex-search.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 10px 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+          
+	}
+
+	&__what-search {
+		border-bottom: 1px solid @beige-dark;
+		padding-bottom: 20px;
+	}
+	
+	&__who-win--white {
+	    
+      margin-top: 20px;
+      font-weight: bold;
+  
+    }
+
+    &__bottom {
+		background: #fff;
+		display: block;
+		bottom: 0;
+		left: 0;
+		width: 86%;
+		max-width: 1160px;
+		height: 50px;
+		position: absolute;
+		z-index: 500;
+		margin-left: 7%;
+		margin-right: 7%;
+
+		&:before {
+			background: -webkit-linear-gradient(left top, transparent 50%, #fff 50%);
+			background: linear-gradient(to right bottom, transparent 50%, #fff 50%);
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 40px;
+			height: 50px;
+			margin-left: -40px;
+		}
+
+		&:after {
+			background: -webkit-linear-gradient(right top, transparent 50%, #fff 50%);
+			background: linear-gradient(to left bottom, transparent 50%, #fff 50%);
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 50px;
+			margin-right: -40px;
+		}
+
+		@media (min-width: 1366px) {
+			width: 1160px;
+			left: 50%;
+			margin-left: -570px;
+			margin-right: auto;
+		}
+	}
+
+}
+
+@media (min-width:0px) and (max-width:768px) {
+    
+    @import main-promo--phone.less;
+    
+}
+ 
+@media (min-width:769px) and (max-width:1170px) {
+    
+    @import main-promo--tablet.less;
+    
+}
+
+@media (min-width:1199px)  {
+    
+    @import main-promo--wide.less;
+    
+}
+
+@media (min-width:769px) {
+    
+    @import promo-traffic.less;
+    
+}
+
+
+

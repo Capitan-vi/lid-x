@@ -1,0 +1,151 @@
+.footer{
+	padding: 30px 0;
+	position: relative;
+	color: @white;
+	background: @black url(http://lid-x.ru/wp-content/themes/lidx/img/footer-bg.jpg) no-repeat 0 0;
+	background-size: 100% 100%;
+
+	&__logo{
+		width: 99px;
+		height: 39px;
+
+		img{
+			max-width: 100%;
+		}
+	}
+	
+	nav{
+
+		display: inline-block;
+		max-width: 660px;
+		float: right;
+		margin-right: 35px;
+		vertical-align: top;
+
+		//&:extend(.header nav);
+
+		//li:extend(.header nav li){}
+		li{
+			list-style: none;
+			display: inline-block;
+
+			&.current_page_item a{
+				background-color: @red;
+				color: @white;
+			}
+		}
+
+
+
+		//a:extend(.header nav a){
+
+		//	color: @white;
+			
+		//	&:hover,
+		//	&:active{
+		//		&:extend(.header nav a:hover);
+		//	}
+		//}
+
+		a{
+			display: block;
+			padding: 8px 30px;
+			text-decoration: none;
+			font-size: @normal;
+			line-height: @normal+6;
+
+			color: @white;
+
+			.trs(300ms);
+			.bdrs;
+
+			&:hover{
+				background-color: @red;
+				color: @white;
+			}
+		}
+
+		&:not(:hover) .active{
+			background-color: @red;
+			color: @white;
+		}
+	}
+	.footer-line-2{
+		margin-bottom: 40px;
+		font-size: 0;
+	}
+	.footer-line-2-col{
+		display: inline-block;
+		vertical-align: top;
+		width: 300px;
+		margin-right: 80px;
+
+		font-size: @big;
+		line-height: @big+4;
+	
+		a{
+			color: @white;
+			text-decoration: none;
+		}
+	}
+	.footer-make-order-text{
+		margin-bottom: 5px;
+		
+		a{
+			display: inline-block;
+
+			color: @green;
+			text-decoration: none;
+			border-bottom: 3px dashed @green;
+		}
+	}
+	.footer-offer-text{
+		margin-bottom: 15px;
+
+		a{
+			color: @green;
+			text-decoration: underline;
+		}
+	}
+	.footer-offer-link{
+		display: inline-block;
+		padding: 7px 10px;
+	
+		background-color: @asphalt;
+	}
+	.footer-contacts-order-call{
+		margin-bottom: 30px;
+
+		a{
+			display: block;
+		}
+		img{
+			float: left;
+			margin-left: 5px;
+			margin-right: 20px;
+		}
+	}
+	.footer-contacts-send-message {
+		a{	
+			display: block;
+		}
+		img{
+			float: left;
+			max-width: 40px;
+			margin-right: 15px;
+		}
+	}
+	.footer-made-by,
+	.footer-made-by a{
+		padding: 15px 0;
+		
+		text-align: center;
+		background: @black;
+		font-size: @big;
+		line-height: @big+6;
+		color: @light-gray;
+		text-decoration: none;
+	}
+}
+
+@import footer--phone.less;

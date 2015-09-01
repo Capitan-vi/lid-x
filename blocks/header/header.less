@@ -1,0 +1,83 @@
+
+// --------------------------------- HEADER --------------------------------- //
+
+.header{
+    
+	padding: 30px 0;
+
+	&__description{
+		display: inline-block;
+		padding: 2px 0 1px 8px;
+		max-width: 130px;
+		border-left: 1px solid @asphalt;
+		font-family: @myriad;
+		font-size: @normal - 2;
+		line-height: @normal;
+		color: @asphalt;
+	}
+
+	&__nav-checkbox{ display: none; }
+
+	nav{
+		display: inline-block;
+		max-width: 660px;
+		float: right;
+		margin-right: 35px;
+		vertical-align: top;
+		
+		li{
+			list-style: none;
+			display: inline-block;
+
+			&.current_page_item a{
+				background-color: @red;
+				color: @white;
+			}
+		}
+
+		a{
+			display: block;
+			padding: 8px 30px;
+
+			text-decoration: none;
+			font-size: @normal;
+			line-height: @normal+6;
+			color: @black;
+
+			.trs(300ms);
+			.bdrs;
+
+			&:hover{
+				background-color: @red;
+				color: @white;
+			}
+		}
+		&:not(:hover) .active{
+			background-color: @red;
+			color: @white;
+		}
+	}
+
+
+	.header-order-call{
+		position: absolute;
+		right: 0;
+		top: -22px;
+
+		font-size: @normal;
+		color: @black;
+		text-decoration: none;
+	}
+}
+
+//--------------------------------- end HEADER ---------------------------------//
+
+
+@import header--phone.less;
+
+
+@media (min-width:769px) and (max-width:960px) {
+
+    @import header-tablet.less
+
+}

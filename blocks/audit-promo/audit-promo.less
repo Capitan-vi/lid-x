@@ -1,0 +1,473 @@
+
+.promo-audit {
+  padding-top: 60px;
+  background-size: cover;
+  padding-bottom: 37px;
+   background-image: url(http://lid-x.ru/wp-content/uploads/2015/06/bg-audit-lg.jpg);
+   overflow: hidden;
+
+  @media (min-width: 1140px) {
+    padding-bottom: 37px !important;
+  }
+
+    &__title {
+        font-weight: bold;
+        font-size: 37px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__title > span {
+        font-size: 34px;
+        font-weight: bold;
+        display: block;
+    }
+
+    &__text {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    &__thumb {
+
+        margin-bottom: 20px;
+
+    }
+
+
+    &__order {
+      color: #fff;
+      font-size: 22px;
+      background-color: @blue-dark;
+      border-radius: 5px;
+      padding: 13px 20px;
+      display: inline-block;
+      outline: none;
+      border: 0;
+      text-decoration: none;
+
+      @media (max-width: 500px) {
+        margin-bottom: 24px;
+      }
+
+      &:hover{
+        background: none;
+        box-shadow: 0 0 0 3px @btn-dark-blue inset;
+        color: @blue-dark;
+      }
+    }
+
+    &__order:nth-of-type(2) {
+      margin-left: 24px;
+
+      @media (max-width: 768px) {
+        margin-left: 0;
+      }
+    }
+
+    &__ipad {
+      display: inline-block;
+      position: relative;
+    }
+
+
+    &__ipad-text {
+      background: #fff;
+      border-radius: 4px;
+      position: absolute;
+      padding: 10px 15px;
+      right: 150px;
+      color: @blue-dark;
+      width: 305px;
+      box-sizing: border-box;
+
+      &--big {
+        font-size: 19px;
+        font-weight: bold;
+      }
+
+      &--small {
+        font-size: 15px;
+      }
+
+      &:before {
+        border: 3px solid @blue-dark;
+        border-radius: 50%;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -54px;
+        margin-top: -19px;
+        width: 38px;
+        height: 38px;
+      }
+
+      &:after {
+        border: 4px solid @green-light;
+        border-radius: 50%;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -45px;
+        margin-top: -10px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &__ipad-text:first-of-type {
+      top: 45px;
+    }
+
+    &__ipad-text:last-of-type {
+      top: 165px;
+
+      &:after {
+        border: 4px solid @red-light;
+      }
+    }
+}
+
+
+.col-xs-4.promo-audit__thumb {
+  margin-bottom: 20px;
+}
+
+.promo-audit__thumb img {
+  max-width: 100%;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 960px) {
+  .promo-audit {
+    text-align: center;
+    background-color: #e5e8df;
+    background-image: -webkit-linear-gradient(#f7f8f0 15%, #c0bbbf 100%);
+    background-image: linear-gradient(#f7f8f0 15%, #c0bbbf 100%);
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1139px) {
+  .promo-audit__title {
+    margin-bottom: 28px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .promo-audit__text {
+    font-size: 15px;
+
+  }
+}
+.promo-audit__text--bold {
+  font-weight: bold;
+  line-height: 32px;
+}
+
+@media (max-width: 767px) {
+  .promo-audit__text--bold {
+    font-weight: normal;
+  }
+}
+.promo-audit__text:last-of-type {
+  margin-bottom: 0;
+}
+.promo-audit .btn-flat {
+  margin-top: 40px;
+}
+
+
+.audit {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .audit {
+    padding-bottom: 55px;
+  }
+}
+@media (max-width: 1139px) {
+  .audit {
+   // background-color: #f8f8f8;
+    text-align: center;
+  }
+}
+@media (max-width: 1139px) {
+  .audit {
+    padding-bottom: 45px;
+  }
+}
+.audit__wrapper {
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  padding: 25px;
+  width: 510px;
+  position: absolute;
+  -webkit-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+          transform-origin: right bottom;
+  min-height: 370px;
+}
+.audit__wrapper:nth-child(1) {
+  z-index: 1;
+  top: 0px;
+  -webkit-transform: rotate(4deg);
+      -ms-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+.audit__wrapper:nth-child(2) {
+  z-index: 2;
+  top: 5px;
+  -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+.audit__wrapper:nth-child(3) {
+  z-index: 3;
+  top: 10px;
+  position: relative;
+}
+
+.audit__title {
+  color: #43c367;
+  margin-bottom: 10px;
+}
+@media (max-width: 1139px) {
+  .audit__title {
+    margin-bottom: -10px;
+    background-color: #f8f8f8;
+  }
+  .audit__title:before {
+    border-right: 16px solid #f8f8f8;
+  }
+  .audit__title:after {
+    border-left: 16px solid #f8f8f8;
+  }
+}
+@media (max-width: 767px) {
+  .audit__title {
+    margin-bottom: 0;
+  }
+}
+.audit__subtitle,
+.audit__item,
+.audit__item > span {
+  color: #959595;
+  font-size: 15px;
+}
+.audit__subtitle {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) and (max-width: 1139px) {
+  .audit__subtitle {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .audit__subtitle {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+}
+.audit__list {
+  list-style: none;
+  margin-bottom: 15px;
+}
+@media (min-width: 1140px) {
+  .audit__list {
+    padding-right: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1139px) {
+  .audit__list {
+    margin-bottom: 20px;
+    font-size: 0;
+  }
+}
+@media (max-width: 767px) {
+  .audit__list {
+    margin-bottom: 20px;
+  }
+}
+.audit__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 60px;
+}
+.audit__item > span {
+  text-decoration: underline;
+}
+.audit__item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+.audit__item:nth-child(1):before {
+  background-image: url(http://lid-x.ru/wp-content/uploads/2015/06/sprite-audit.png);
+  background-position: -172px -127px;
+  width: 39px;
+  height: 37px;
+}
+.audit__item:nth-child(2):before {
+  background-image: url(http://lid-x.ru/wp-content/uploads/2015/06/sprite-audit.png);
+  background-position: -96px -127px;
+  width: 38px;
+  height: 38px;
+}
+.audit__item:nth-child(3):before {
+  background-image: url(http://lid-x.ru/wp-content/uploads/2015/06/sprite-audit.png);
+  background-position: -134px -127px;
+  width: 38px;
+  height: 38px;
+}
+@media (min-width: 768px) and (max-width: 1139px) {
+  .audit__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    text-align: left;
+    padding-left: 0;
+    padding-top: 50px;
+  }
+  .audit__item:nth-child(1) {
+    padding-right: 30px;
+  }
+  .audit__item:nth-child(2) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .audit__item:nth-child(3) {
+    padding-left: 30px;
+  }
+  .audit__item:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .audit__item {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+}
+.audit__link {
+  color: #43c367;
+  font-size: 18px;
+  text-decoration: underline;
+  display: inline-block;
+}
+.citation {
+  font-size: 0;
+  margin-bottom: 40px;
+}
+.citation__image,
+.citation__body {
+  display: inline-block;
+  vertical-align: top;
+}
+.citation__image {
+  width: 18%;
+  text-align: left;
+}
+.citation__image > img {
+  height: 113px;
+  width: 113px;
+}
+@media (max-width: 767px) {
+  .citation__image {
+    display: none;
+  }
+}
+.citation__body {
+  width: 72%;
+  border-left: 9px solid #38d272;
+  min-height: 113px;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .citation__body {
+    width: 100%;
+    border-left: 0;
+    padding-left: 0;
+    position: relative;
+  }
+  .citation__body:before,
+  .citation__body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(http://lid-x.ru/wp-content/uploads/2015/06/sprite-audit.png);
+    background-position: -273px -127px;
+    width: 21px;
+    height: 16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .citation__body:before {
+    top: -19px;
+  }
+  .citation__body:after {
+    bottom: -19px;
+  }
+}
+.citation__text,
+.citation__autor,
+.citation__autor > span {
+  font-style: italic;
+  color: #fff;
+  font-size: 15px;
+  text-align: left;
+  line-height: 23px;
+}
+
+.citation__autor {
+  margin-top: 10px;
+}
+.citation__autor > span {
+  color: #38d272;
+}
+
+
+
+
+
+
+
+//phone vertical
+
+@media screen and (max-width:480px) {
+
+@import audit-promo--phone.less
+
+}
+
+
+// tablet
+
+@media (min-width:769px) and (max-width:960px) {
+
+@import audit-promo--tablet.less
+
+}
+
+
+// desktop
+
+@media (min-width:1140px) {
+
+@import audit-promo--wide.less
+
+}

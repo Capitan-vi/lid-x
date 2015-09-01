@@ -1,0 +1,287 @@
+
+.example-project {
+  
+  &__box {
+    margin: 0 auto;
+    padding: 50px 0;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  &__col--1 {
+    float: left;
+    text-align: center;
+
+    img[alt="yellow-car"] {
+      margin-top: 25px ;
+    }
+
+    @media (max-width: 960px) {
+      display: none;
+    }
+  }
+
+  &__col--2 {
+    margin-left: 280px;
+
+    @media (max-width: 960px) {
+      margin-left: 0;
+    }
+  }
+
+  &__text-row {
+    position: relative;
+
+    img {
+      display: none;
+      margin-top: 80px;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      @media (min-width:769px) and (max-width:960px) {
+        display: block;
+      }
+    }
+  }
+
+  &__presentation {
+    border: 10px solid @alarm-gray;
+    font-size: @normal;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 230px;
+
+    img {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__text--small {
+    font-family: 16px;
+  }
+
+  &__paragraf {
+
+    @media (min-width: 769px) and (max-width:960px) {
+      margin-right: 150px;
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    background: @red;
+    display: block;
+    color: #fff;
+    font-size: 17px;
+    width: 185px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+
+    @media (max-width: 320px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: @extra;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 150px;
+
+    @media (max-width: 768px) {
+      text-align: center;
+      margin-right: 0;
+    }
+  }
+
+  &__brands-row {
+    margin-left: -8px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__brands-col {
+    display: inline-block;
+    border: 2px solid @beige-middle;
+    width: 130px;
+    height: 80px;
+    text-align: center;
+    margin: 15px 8px;
+
+    img[alt="yandex"] {
+      margin-top: 10px;
+    }
+
+    img[alt="logo-begun"] {
+      margin-top: 20px;
+    }
+
+    img[alt="vk"] {
+      margin-top: 27px;
+    }
+  }
+
+  
+
+  &__result-row {
+    display: table;
+
+    @media (max-width: 320px) {
+      display: block;
+    }
+  }
+
+  &__result-col--1,
+  &__result-col--2,
+  &__result-col--3 {
+    display: table-cell;
+
+    @media (max-width: 320px) {
+      display: block;
+    }
+  }
+
+  &__result-col--1 {
+    vertical-align: bottom;
+    width: 16%;
+
+    @media (max-width: 769px) {
+      display: table-caption;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &__result-col--2 {
+    width: 28%;
+    padding-left: 10px;
+
+    @media (max-width: 769px) {
+      width: 33%;
+    }
+
+    @media (max-width: 320px) {
+      width: 100%;
+    }
+  }
+
+  &__result-col--3 {
+    width: 28%;
+    padding-left: 10px;
+
+    @media (max-width: 769px) {
+      width: 33%;
+    }
+
+    @media (max-width: 320px) {
+      width: 100%;
+    }
+  }
+
+  &__thanks-row {
+    margin-top: 35px;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  &__thanks-col--1 {
+    float: left;
+
+    img {
+
+      @media (max-width: 769px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 769px) {
+      float: none;
+    }
+  }
+
+  &__percent {
+    color: @asphalt;
+    font-size: @big;
+    font-weight: bold;
+
+    @media (max-width: 320px) {
+      display: none;
+    }
+  }
+
+  &__result-col--1 {
+    color: @alarm-gray;
+    font-size: 25px;
+  }
+
+  &__thanks-col--2 {
+    margin-left: 70px;
+
+    @media (max-width: 769px) {
+      margin-left: 0;
+    }
+  }
+
+  &__thanks-text {
+    color: @asphalt;
+    font-family: @normal;
+    font-style: italic;
+  }
+
+  &__autor {
+    color: @asphalt;
+    font-family: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &__autor-name {
+    font-weight: bold;
+  }
+
+  &__autor-message {
+    color: @asphalt;
+    font-family: 16px;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @media (max-width: 320px) {
+      display: block;
+    }
+  }
+}
+
+.figure-hidden {
+
+  @media (max-width: 320px) {
+    display: none;
+  }
+}

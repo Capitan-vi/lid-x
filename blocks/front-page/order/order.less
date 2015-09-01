@@ -1,0 +1,152 @@
+.order {
+  padding: 30px 0;
+
+  .section-title, h2 {
+    font-size: 25px;
+    line-height: 35px;
+    max-width:550px;
+    margin: 0 auto 45px;
+
+  }
+
+}
+.form-order {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 25px;
+  box-sizing:border-box;
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+  &__header {
+    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  &__input {
+    width: 100%;
+    max-width: 348px;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 36px;
+    color: #000;
+    border: 2px solid #425065;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding-left: 25px;
+    }
+   &__submit {
+    width: 100%;
+    background-color: #97c361;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 20px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;  
+    cursor:pointer;
+    
+    &:focus,
+    &:hover {
+        transition: .2s;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken(#97c361, 10%);
+    }
+   }
+
+   &__submit-wrapper {
+    text-align: center;
+   }
+
+   & &__submit {
+    margin-top: 30px;
+   }
+   & .form-group {
+       margin-bottom: 15px;
+       overflow:hidden;
+   }
+   & .checkbox-group {
+       margin-bottom: 25px;
+   }
+   &__checkbox {
+       margin-top: 0;
+       background-image: -webkit-linear-gradient(rgba(0,0,0,0),rgba(255,255,255,0)), -webkit-linear-gradient(right,#97c361 50%,#c9c9c9 50%);
+     
+   }
+   &__label--checkbox {
+       font-size: 16px;
+       line-height: 25px;
+   }
+}
+
+::-webkit-input-placeholder {color:#737373;text-overflow:ellipsis;}
+::-moz-placeholder          {color:#737373;text-overflow:ellipsis;}/* Firefox 19+ */
+:-moz-placeholder           {color:#737373;text-overflow:ellipsis;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#737373;text-overflow:ellipsis;}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+
+@media (max-width:360px)
+{
+    .form-order {
+       &__label--checkbox {
+        max-width: 150px;
+        float:left;
+       }
+       &__submit {
+       font-size: 16px;
+       }
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:1199px)
+{
+  .order {
+    background: url(@{base-url-front-page}order/img/order-bg.jpg) center center;
+    background-size: cover;
+  }
+}
+@media (min-width:1200px)
+{
+  .order {
+    position: relative;
+    background: url(@{base-url-front-page}order/img/order-bg.jpg) center center;
+    background-size: cover;
+
+
+
+    &__promo {
+      width: 700px;
+      margin-top: 45px;
+      margin-left: 14px;
+    }
+  }
+
+  .form-order {
+    &__submit-wrapper {
+     text-align: right;
+    }
+  }
+}

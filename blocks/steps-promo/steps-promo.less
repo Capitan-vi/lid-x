@@ -1,0 +1,164 @@
+section.steps {
+  padding: 40px 0;
+  background-color: #f6f3ef;
+}
+section.steps h2 {
+  margin-bottom: 30px;
+}
+section.steps .steps-container {
+  background-image: url(http://lid-x.ru/wp-content/themes/lidx/img/bg-steps.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+section.steps .steps-container > p {
+  margin-left: 54px;
+  font-size: 18px;
+}
+.steps-container a {
+  color: @green;
+}
+section.steps ul {
+  margin: 0;
+}
+section.steps ul li {
+  list-style: none;
+  margin-left: 20px;
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+section.steps ul li:after {
+  content: "";
+  position: absolute;
+  left: -27px;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #85b94f;
+  border-radius: 50%;
+}
+section.steps ul li:before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #f6f3ef;
+  border-radius: 50%;
+  z-index: 2;
+}
+section.steps ul li h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+section.steps ul li p {
+  font-size: 18px;
+}
+section.steps .left-side {
+  display: inline-block;
+  vertical-align: top;
+  width: 53%;
+  margin-right: 50px;
+}
+section.steps .right-side {
+    display: inline-block;
+  vertical-align: top;
+  width: 36%;
+ // background-image: url(http://lid-x.ru/wp-content/themes/lidx/img/bg-tools.svg);
+  //background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 100px 65px;
+  box-sizing: border-box;
+  min-height: 600px;
+  text-align: center;
+  float:right;
+  position: relative;
+
+  background-image: none;
+  border: 2px dashed #ddd;
+  background-color: white;
+
+}
+
+
+
+section.steps .right-side h3 {
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 24px;
+}
+section.steps .right-side h3:after {
+  content: "";
+  position: absolute;
+  top: -38px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 33px;
+  height: 30px;
+  background-image: url(http://lid-x.ru/wp-content/themes/lidx/img/star.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.steps .right-side img {
+  margin: 10px;
+  width: 100px;
+    display: inline-block;
+  vertical-align: middle;
+}
+section.steps .right-side img:nth-child(5) {
+  margin: 0;
+}
+section.steps .right-side img:nth-child(6) {
+  width: 150px;
+}
+section.steps .right-side > p {
+  margin-top: 10px;
+  // border-top: 2px solid #a49f9f;
+  padding-top: 10px;
+  position: relative;
+}
+section.steps .right-side > p:after {
+  content: "";
+  position: absolute;
+  bottom: -43px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 33px;
+  height: 30px;
+  background-image: url(http://lid-x.ru/wp-content/themes/lidx/img/star-gray.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.steps .logo-advert__tablet { display: none; }
+
+
+
+
+
+
+
+
+@media (min-width:0px) and (max-width:768px) {
+
+  @import steps-promo--phone.less;
+
+}
+
+
+@media (min-width:769px) and (max-width:960px) {
+
+  @import steps-promo--tablet.less;
+
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+  section.steps .right-side {
+    padding: 100px 40px;
+  }
+}
+
+

@@ -1,0 +1,27 @@
+.want-consultation{
+	background-color: @bg-gray;
+  	padding: @extra 0;
+
+	p{
+		width: 50%;
+	  	position: relative;
+	  	font-size: @medium;
+  		display: inline-block;
+  		vertical-align: top;
+
+  		&:after{
+  			content: "";
+			position: absolute;
+			right: -170px;
+			top: 5px;
+			width: 100px;
+			height: 25px;
+			background-image: url(http://lid-x.ru/wp-content/themes/lidx/img/arrow-right-gray.png);
+			background-repeat: no-repeat;
+			border-radius: 50%;
+			z-index: 2;
+  		}
+	}
+
+	a{ float: right; }
+}

@@ -1,0 +1,94 @@
+.reduce-advertising-cost {
+	background-color: @beige-middle;
+  padding: 50px 0;
+
+  &__box {
+    border: 1px solid @beige-dark;
+    margin: 0 auto;
+    padding: 30px 0 20px;
+    position: relative;
+
+    &:before {
+      background: @beige-middle;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -25px;
+      margin-top: -25px;
+      width: 50px;
+      height: 50px;
+    }
+
+    &:after {
+      background: url('http://beta.lid-x.ru/wp-content/themes/lidx/blocks/portfolio-line/img/star.png');
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -13px;
+      margin-top: -13px;
+      width: 26px;
+      height: 26px;
+      z-index: 10;
+    }
+  }
+
+  &__title {
+    font-size: @medium;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: @medium;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 650px;
+  }
+
+  	&__column{
+
+
+  		&--left{
+			float: left;
+  			width: 15%;
+
+  			p{
+  				font-size: 30px;
+  				color: #ed303c;
+  				font-weight: bold;
+  			}
+  		}
+
+  		&--right{
+			float: right;
+  			width: 77%;
+  			padding-left: 50px;
+  			border-left: 2px solid #7f96a3;
+
+  			p{
+  				color: #7f96a3;
+  				font-size: 20px;
+  			}
+  		}
+  	}
+
+}
+
+
+@media (min-width:0px) and (max-width:768px) {
+
+    @import portfolio-line--phone.less;
+
+}
+
+@media (min-width:769px) and (max-width:960px) {
+
+    @import portfolio-line--tablet.less;
+
+}
+
+@import example-project.less;
+ 

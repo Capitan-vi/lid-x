@@ -1,0 +1,334 @@
+.audit-help {
+  background-color: #f3f5ef;
+  background-image: -webkit-linear-gradient(#f3f5ef 20%, #adb2be 100%);
+  background-image: linear-gradient(#f3f5ef 20%, #adb2be 100%);
+  padding-bottom: 70px;
+}
+
+@media (min-width: 1140px) {
+  // .audit-help {
+  //   position: relative;
+  // }
+  // .audit-help:before {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   height: 37px;
+  //   width: 46%;
+  //   top: -37px;
+  //   background-color: #f3f5ef;
+  // }
+  // .audit-help:after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   height: 0;
+  //   width: 0;
+  //   left: 46%;
+  //   top: -37px;
+  //   border-left: 34px solid #f3f5ef;
+  //   border-top: 37px solid transparent;
+  // }
+}
+
+
+.audit-help__title {
+  font-size: 25px;
+  font-weight: normal;
+  color: #415165;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.audit-help__slids {
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  .row {
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    &:first-of-type {
+      margin-top: 20px;
+    }
+  }
+
+  &-title {
+    font-size: @medium;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &-thumb {
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+
+@media (max-width: 1139px) {
+  .audit-help__title {
+    margin-bottom: -10px;
+    background-color: #f3f5ef;
+  }
+  .audit-help__title:before {
+    border-right: 16px solid #f3f5ef;
+  }
+  .audit-help__title:after {
+    border-left: 16px solid #f3f5ef;
+  }
+}
+@media (max-width: 767px) {
+  .audit-help{
+
+    &__title {
+      margin-bottom: 0;
+      padding-top: 40px;
+    }
+
+    &__button{
+      text-align: center;
+    }
+
+  }
+}
+@media (min-width: 768px) and (max-width: 1139px) {
+  .audit-help__title {
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 1140px) {
+  .audit-help__title {
+    position: relative;
+  }
+
+}
+.audit-help__text--bold,
+.audit-help__text--normal {
+  font-size: 18px;
+  color: #415165;
+  line-height: 28px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.audit-help__text--bold {
+  font-weight: bold;
+}
+
+@media (min-width: 1140px) {
+  .audit-help__text--bold,
+  .audit-help__text--normal {
+    padding-right: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .audit-help__text--bold,
+  .audit-help__text--normal {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+}
+.audit-help__link {
+
+  .btn(#38d272,#fff);
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 12px 15px;
+
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translate(17px);
+
+  background-image: url(http://lid-x.ru/wp-content/uploads/2015/07/Eye_outline_64.png);
+  background-size: 30px;
+  padding-left: 55px;
+  background-repeat: no-repeat;
+  background-position: 14px center;
+
+}
+
+
+@media (min-width: 1140px) {
+  .audit-help__link {
+    margin-bottom: 30px;
+  }
+
+}
+@media (max-width: 1139px) {
+  .audit-help__link:first-of-type {
+    display: none;
+  }
+
+}
+.audit-help__header {
+  padding-bottom: 13px;
+}
+@media (max-width: 1139px) {
+  .audit-help__header {
+    padding-bottom: 35px;
+  }
+}
+
+.audit-help__footer {
+  background-color: #fff;
+  border-radius: 5px;
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  box-sizing: border-box;
+  width: inherit;
+}
+
+@media (max-width: 1139px) {
+
+
+}
+@media (min-width: 768px) and (max-width: 1139px) {
+  .audit-help__footer {
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .audit-help__footer {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+}
+.audit-help__form {
+  font-size: 0;
+}
+@media (min-width: 768px) and (max-width: 1139px) {
+  .audit-help__form {
+
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1139px) {
+
+  .audit-help__item:nth-child(3) {
+    margin-right: 0;
+  }
+  .audit-help__item:last-child {
+    width: 100%;
+  }
+  .audit-help__item--btn {
+    display: block;
+    text-align: center;
+  }
+  .audit-help__item--btn .btn-flat {
+    padding: 8px 47px !important;
+  }
+}
+
+.audit-help .btn-flat {
+  font-size: 20px;
+  padding: 7px 28px;
+}
+@media (min-width: 1140px) {
+  .audit-help .btn-flat {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1139px) {
+  .audit-help .btn-flat {
+    padding: 9px 12px;
+    margin-top: 40px;
+  }
+}
+
+
+.form-audit__wrapper {
+
+  select {
+    height: 40px;
+  }
+}
+
+
+.audit-help__label {
+  font-size: 16px;
+  color: #415165;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.audit-help__label > sup {
+  font-size: 11px;
+  top: -7.5px;
+}
+@media (max-width: 1139px) {
+  .audit-help__label {
+    font-size: 16px;
+  }
+}
+.audit-help__input, option {
+  outline: none;
+  font-size: 20px;
+  color: #000;
+  padding: 0 10px;
+  border: 2px solid #5f7491;
+  line-height: 36px;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing:border-box;
+}
+.audit-help__input:focus {
+  border: 2px solid #38d272;
+}
+
+
+.wpcf7-submit {
+
+  .btn(#38d272,#fff);
+  font-size: 18px;
+  margin-top: 45px;
+  border-radius: 5px;
+  padding: 9px 12px;
+  float:right;
+-webkit-appearance: none;
+}
+
+.audit-help__item input[type="submit"]{
+  width: 100%;
+}
+
+.form-audit__wrapper {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 30px;
+  text-align: left;
+  border-radius: 5px;
+  max-width: 345px;
+  margin: 30px auto;
+  position: relative;
+
+  input[type="submit"] {
+    /* background: url(http://beta.lid-x.ru/wp-content/themes/lidx/blocks/audit-process/img/check.png) no-repeat;
+    background-size: 17px 13px */;
+  }
+}
+
+
+
+ @media (min-width:0px) and (max-width:768px) {
+
+  @import audit-help--phone.less;
+
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+
+  @import audit-help--tablet.less;
+
+}
