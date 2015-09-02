@@ -10,7 +10,7 @@
 	&__korpus{
 
 		margin-top: 55px;
-		
+
 		>div{text-alight: left;}
 
 		> div,
@@ -20,7 +20,7 @@
 
 		> input:nth-of-type(1):checked ~ div:nth-of-type(1),
 		> input:nth-of-type(2):checked ~ div:nth-of-type(2),
-		> input:nth-of-type(3):checked ~ div:nth-of-type(3){
+		> input:nth-of-type(3):checked ~ div:nth-of-type(3) {
   			display: block;
   			padding: 5px;
 		}
@@ -64,11 +64,11 @@
 		}
 	}
 
-	
+
 	// PAGE-PORTFOLIO
 
 		.portfolio-cases{
-			
+
 			&__korpus-tab{ left: 0; }
 
 
@@ -83,7 +83,7 @@
   				&:before {
   					content: "";
 				    display: inline-block;
-				    background-image: url(@{base-url}portfolio-cases/img/portfolio--arrow-dark.png); 
+				    background-image: url(@{base-url}portfolio-cases/img/portfolio--arrow-dark.png);
 				    background-position: center center;
 				    background-repeat: no-repeat;
 				    width: 30px;
@@ -124,13 +124,13 @@
 
 	.case{
 
-		&__wrap{ 
+		&__wrap{
 		    padding: 40px 0;
 		    border-bottom: 2px solid #f6f6f6;
 		&:first-of-type { padding-top:50px; };
 		&:last-of-type { border:none; };
 		}
-		
+
 
 		&__number{
 			color: #677a84;
@@ -139,7 +139,7 @@
 			line-height: 30px;
 			margin-top: 0;
 			margin-bottom: 10px;
-			
+
 			&--up:before{
 			    content:'';
 			    display:inline-block;
@@ -150,7 +150,7 @@
 			    vertical-align:top;
 			    position:relative;
 			    top: 4px;
-			    
+
 			}
 			&--down:before {
 			    content:'';
@@ -162,22 +162,22 @@
 			    vertical-align:top;
 			    position:relative;
 			    top: 4px;
-			    
+
 			}
-			
+
 		}
 
 		&__number-info{
 
   			p{ font-size: 14px; }
-  			
+
 		}
 
 	}
 
 
 	&__short{
-	    
+
 
 		*{
 			display: inline-block;
@@ -187,7 +187,7 @@
 		.case{
 
 			&__main{ width: 33%;  }
-			
+
 
 			&__img-wrap{
 				width: 30%;
@@ -217,7 +217,7 @@
 			&__descr{ width: 65%;  }
 
 		}
-        
+
 	}
 
 
@@ -258,7 +258,7 @@
 
 			&__additional-info{
 				padding: 20px;
-				
+
 				h4{ margin-bottom: 10px; display: block; }
 
 			}
@@ -277,8 +277,8 @@
 
 			&__used-img{
 				width: 100px;
-				display: inline-block; 
-				vertical-align: middle; 
+				display: inline-block;
+				vertical-align: middle;
 				margin-right: 20px;
 
 				img{ width: inherit; }
@@ -325,12 +325,12 @@
 		}
 
 	}
-	
+
 	&__portfolio-link-container {
 	    padding: 20px 0;
 	    text-align: center;
 	}
-	
+
 	&__portfolio-link {
 	    display: inline-block;
 	    background-color: #97c361;
@@ -347,7 +347,7 @@
         -moz-appearance: none;
         appearance: none;
         cursor: pointer;
-        
+
         &:focus,
         &:hover {
             background-color: #7eaf42;
@@ -358,15 +358,15 @@
 }
 
 @media (min-width:0px) and (max-width:768px) {
-    
+
     @import portfolio-cases--phone.less;
-    
+
 }
- 
+
 @media (min-width:769px) and (max-width:960px) {
-    
+
     @import portfolio-cases--tablet.less;
-    
+
 }
 
 @media (min-width:769px) {
@@ -391,4 +391,4 @@
         }
 }
 }
- 
+
