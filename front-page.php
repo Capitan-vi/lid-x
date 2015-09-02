@@ -1,5 +1,9 @@
 <?php
-// Template name: Главная
+/*
+
+Template name: Главная
+
+*/
 ?>
 
 <?php get_header(); ?>
@@ -14,11 +18,9 @@
   <?php    include 'blocks/front-page/future-slogan/future-slogan.php'; ?>
   <?php    include 'blocks/front-page/steps/steps.php'; ?>
   <?php    include 'blocks/front-page/workflow/workflow.php'; ?>
+  <?php    include 'blocks/front-page/changes/changes.php'; ?>
   <?php    include 'blocks/front-page/reduce-advertising-cost/reduce-advertising-cost.php'; ?>
   <?php    include 'blocks/front-page/order/order.php'; ?>
-
-  <!-- Что изменится, когда мы начнем работать -->
-  <?php //include 'blocks/front-page/changes/changes.php'; ?>
 
 	<!-- Мне нужны клиенты -->
 	<?php //include 'blocks/want-clients/want-clients.php'; ?>
