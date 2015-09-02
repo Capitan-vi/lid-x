@@ -5,15 +5,17 @@
 
     <!-- portfolio-cases__korpus-->
     <div class="portfolio-cases__korpus">
+      <input type="radio" name="tab-portfolio-cases" id="portfolio-cases__projects">
+      <label class="portfolio-cases__korpus-tab" for="portfolio-cases__projects">Проекты</label>
 
-      <input type="radio" name="tab-portfolio-cases" id="vkl1" checked>
-      <label class="portfolio-cases__korpus-tab" for="vkl1">Кратко</label>
+      <input type="radio" name="tab-portfolio-cases" id="portfolio-cases__short" checked>
+      <label class="portfolio-cases__korpus-tab" for="portfolio-cases__short">Кратко</label>
 
-      <input type="radio" name="tab-portfolio-cases" id="vkl2">
-      <label class="portfolio-cases__korpus-tab" for="vkl2">Подробно</label>
+      <input type="radio" name="tab-portfolio-cases" id="portfolio-cases__full">
+      <label class="portfolio-cases__korpus-tab" for="portfolio-cases__full">Подробно</label>
 
-      <input type="radio" name="tab-portfolio-cases" id="vkl3">
-      <label class="portfolio-cases__korpus-tab" for="vkl3">Презентация</label>
+      <input type="radio" name="tab-portfolio-cases" id="portfolio-cases__present">
+      <label class="portfolio-cases__korpus-tab" for="portfolio-cases__present">Презентация</label>
 
       <span class="portfolio-cases__helper">
         <span>Переключайтесь между режимами, чтобы увидеть больше подробностей</span>
