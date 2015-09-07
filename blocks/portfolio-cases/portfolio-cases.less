@@ -92,16 +92,64 @@
 				    vertical-align: middle;
   				}
 
-  				&:after{
-  					content: "";
-					position: absolute;
-					width: 100px;
-					height: 30px;
-					background-image: url(../img/arrow-left-helper.png);
-					background-repeat: no-repeat;
-					top: -6px;
-					left: 58px;
-  				}
+  &__title{ text-align: center; font-size: 25px; line-height:35px; }
+
+  &__korpus{
+
+    margin-top: 55px;
+
+    >div{text-alight: left;}
+
+    > div,
+    > input {
+      display: none;
+    }
+
+    > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+    > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+    > input:nth-of-type(3):checked ~ div:nth-of-type(3){
+        display: block;
+        padding: 5px;
+    }
+
+    input[type="radio"]:checked + label {
+        background-color: #ed303c;
+        padding: 10px 24px;
+        color: #ffffff;
+
+      &:after{
+        height: 0;
+          left: -1000px;
+      }
+
+    }
+
+  }
+
+  &__korpus-tab{
+
+    text-align: center;
+    padding: 10px 24px;
+      line-height: 24px;
+      cursor: pointer;
+      position: relative;
+      bottom: 1px;
+      background: #ffffff;
+      border-radius: 5px;
+      margin-right: 10px;
+      width: 130px;
+      font-size:18px;
+
+    &:after{
+      content: "";
+        position: absolute;
+        width: 90%;
+        height: 1px;
+        bottom: 0;
+        left: 5px;
+        border-bottom: 1px dashed #a49f9f;
+    }
+  }
 
   				span{
   					color: #737373;
@@ -164,9 +212,12 @@
 
 			}
 
-		}
-
-		&__number-info{
+    &__wrap{
+        padding: 40px 0;
+        border-bottom: 2px solid #f6f6f6;
+    &:first-of-type { padding-top:50px; };
+    &:last-of-type { border:none; };
+    }
 
   			p{ font-size: 14px; }
 
@@ -177,7 +228,6 @@
 
 	&__short{
 
-
 		*{
 			display: inline-block;
 			vertical-align: top;
@@ -187,6 +237,11 @@
 
 			&__main{ width: 33%;  }
 
+
+    *{
+      display: inline-block;
+      vertical-align: top;
+    }
 
 			&__img-wrap{
 				width: 30%;
@@ -207,8 +262,8 @@
 
 			&__number-info{
 				width: 28%;
-	  			margin: 0 10px;
-	  			text-align: left;
+  			margin: 0 10px;
+  			text-align: left;
 
 	  			p{ font-size: 16px; line-height:19px; }
 			}
@@ -338,26 +393,7 @@
           transition: .2s;
       }
   }
-}
 
-@keyframes case-wrap-statment-open {
-  from {
-    max-height: 226px;
-  }
-
-  to {
-    max-height: 1000px;
-  }
-}
-
-@keyframes case-wrap-statment-close {
-  from {
-    max-height: 1000px;
-  }
-
-  to {
-    max-height: 226px;
-  }
 }
 
 @media (min-width:0px) and (max-width:768px) {
